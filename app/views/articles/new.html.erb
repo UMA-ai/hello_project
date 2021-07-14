@@ -1,0 +1,16 @@
+<h1>新規投稿</h1>
+<%= form_tag("/create") do %>
+ <p>
+  科目名：<textarea name="subject"></textarea>
+  
+  先生の名前：<textarea name="teacher"></textarea>
+
+  評価：<textarea name="comment"></textarea>
+
+  <input type="submit" value="投稿">
+ </p>
+<% end %>
+<%= link_to("戻る" , "/articles") %>
+
+
+

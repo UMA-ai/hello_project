@@ -1,0 +1,19 @@
+<h1>Articles</h1>
+
+<a href="http://127.0.0.1:3000/takumi">西野の実態</a>
+<h2>西野から<%= $showsub_num %>回逃げ切った！</h2>
+<a href="http://127.0.0.1:3000/reset">人生リセマラしような</a>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to("新規投稿" , "/new") %>
+
+<p>Find me in app/views/articles/index.html.erb</p>
